@@ -1,0 +1,34 @@
+.LoginInput{
+    margin-top: 10px;
+}
+
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+
+    .margin-top {
+      margin-top: 15px;
+    }
+}
+
+.nav-right {
+  justify-content: right;
+}
+
+.below-navbar {
+  margin: 0 auto;
+  padding: 100px;
+  min-width: 400px;
+  max-width: 1000px;
+}
+
+.border {
+  border: 5px solid black;
+}
+
