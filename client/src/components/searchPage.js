@@ -57,6 +57,11 @@ const SearchPage = (props) => {
                     onChange={(e) => {
                         setSearchTerm(e.target.value)
                     }}
+                    onKeyPress = {event => {
+                        if (event.key === 'Enter') {
+                          search()
+                        }
+                    }}
                     />
                     <InputGroup.Append>
                     <Button variant="outline-info" onClick={search}>Search</Button>

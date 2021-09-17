@@ -48,6 +48,11 @@ const RegisterPage = () => {
                         onChange={(e) => {
                             setUsernameRegister(e.target.value)
                         }}
+                        onKeyPress = {event => {
+                            if (event.key === 'Enter') {
+                              register()
+                            }
+                        }}
                     />
                 </Form.Group>
                 <Form.Group size="lg" controlId="password">
@@ -58,6 +63,11 @@ const RegisterPage = () => {
                         onChange={(e) => {
                             setPassword1Register(e.target.value)
                         }}
+                        onKeyPress = {event => {
+                            if (event.key === 'Enter') {
+                              register()
+                            }
+                        }}
                     />
                     <Form.Control
                         type="password"
@@ -65,6 +75,11 @@ const RegisterPage = () => {
                         className="margin-top"
                         onChange={(e) => {
                             setPassword2Register(e.target.value)
+                        }}
+                        onKeyPress = {event => {
+                            if (event.key === 'Enter') {
+                              register()
+                            }
                         }}
                     />
                     <div>{message}</div>

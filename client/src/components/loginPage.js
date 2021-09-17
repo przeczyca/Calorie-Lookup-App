@@ -57,6 +57,11 @@ const LoginPage = () => {
                         onChange={(e) => {
                             setUsernameLogin(e.target.value)
                         }}
+                        onKeyPress = {event => {
+                            if (event.key === 'Enter') {
+                              login()
+                            }
+                        }}
                     />
                 </Form.Group>
                 <Form.Group size="lg" controlId="password">
@@ -66,6 +71,11 @@ const LoginPage = () => {
                         placeholder="Enter Password"
                         onChange={(e) => {
                             setPasswordLogin(e.target.value)
+                        }}
+                        onKeyPress = {event => {
+                            if (event.key === 'Enter') {
+                              login()
+                            }
                         }}
                     />
                     <div>{message}</div>
